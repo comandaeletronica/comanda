@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+   xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+        http://xmlns.jcp.org/xml/ns/persistence
+        http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+   <persistence-unit name="primary">
+      <jta-data-source>java:jboss/datasources/ComandalocalLDS</jta-data-source>
+      <class>br.com.comanda.model.Member</class>
+      <class>br.com.comanda.model.CardapioDTO</class>
+      <class>br.com.comanda.model.ClienteDTO</class>
+      <class>br.com.comanda.model.EnderecoDTO</class>
+      <class>br.com.comanda.model.EstabelecimentoDTO</class>
+      <class>br.com.comanda.model.FuncionarioDTO</class>
+      <class>br.com.comanda.model.IngredienteDTO</class>
+      <class>br.com.comanda.model.ItemPedido</class>
+      <class>br.com.comanda.model.MesaDTO</class>
+      <class>br.com.comanda.model.PedidoDTO</class>
+      <class>br.com.comanda.model.ProdutoDTO</class>
+      <class>br.com.comanda.model.PromocaoDTO</class>
+      <class>br.com.comanda.model.UsuarioDTO</class>
+      <properties>
+         <!-- Properties for Hibernate -->
+         <property name="hibernate.hbm2ddl.auto" value="update" />
+         <property name="hibernate.show_sql" value="true" />
+      </properties>
+   </persistence-unit>
+</persistence>
