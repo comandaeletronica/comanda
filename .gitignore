@@ -9,6 +9,7 @@
 *.ear
 *.rar
 *.zip
+.opars
 .RemoteSystemsTempFiles
 .Servers
 .metadata
