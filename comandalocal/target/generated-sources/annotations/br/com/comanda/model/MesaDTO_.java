@@ -9,6 +9,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 @StaticMetamodel(MesaDTO.class)
 public abstract class MesaDTO_ {
 
+	public static volatile SingularAttribute<MesaDTO, String> codigo;
 	public static volatile SingularAttribute<MesaDTO, Integer> idMesa;
 	public static volatile SingularAttribute<MesaDTO, Integer> nroMesa;
 	public static volatile SingularAttribute<MesaDTO, String> status;
