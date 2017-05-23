@@ -24,7 +24,11 @@ public class MesaDTO implements Serializable {
 	@Column(name="nro_mesa")
 	private Integer nroMesa;
 
+	@Column(name="status")
 	private String status;
+
+	@Column(name="codigo")
+	private String codigo;
 
 	//bi-directional many-to-one association to PedidoDTO
 	@OneToMany(mappedBy="tabMesa")
@@ -77,6 +81,18 @@ public class MesaDTO implements Serializable {
 		tabPedido.setTabMesa(null);
 
 		return tabPedido;
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 
 }
